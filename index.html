@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<title>Emmnas Enterprises</title>
+</head>
+
+<body class="w3-white">
+<nav class="w3-sidenav w3-card-2 w3-light-grey w3-animate-top" style="display:none; z-index:4;">
+   <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-large">Close &times;</a> 
+   <a href="#" class="w3-green">Home</a>
+   <a href="about.html" class="w3-hover-white">About Us</a> 
+   <a href="../emmnas/index.html"  class="w3-hover-white">Portal</a>
+   <div class="w3-dropdown-hover">
+   <a href="services.html">Our Services</a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="services/publishing.html">Publishing</a>
+      <a href="services/farming.html">Farming</a>
+      <a href="services/catering.html">Catering</a>
+      <a href="services/contracts.html">General Contracts</a>
+    </div>
+  </div> 
+   <a href="contact.html"  class="w3-hover-white">Contact Us</a>		
+   <a href="news.html"  class="w3-hover-white">News</a>
+</nav>
+
+<div id="main" class="w3-animate-opacity">
+  <header class="w3-container w3-pink">
+   <span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
+   <div class="header_img"><img src="images/header.png" alt="Emmnas Enterprises" height="100px" width="422px"></div>
+ </header>
+ 
+ <div class="w3-overlay"></div>
+  <div class="w3-content w3-display-container indexSlide w3-card-4" style="max-width:900px" >
+   <img class="homeSlide" src="images/1.jpg" height="300px" width="900px">
+   <img class="homeSlide" src="images/2.png" height="300px" width="900px">
+   <img class="homeSlide" src="images/3.jpg" height="300px" width="900px">
+   <img class="homeSlide" src="images/4.jpg" height="300px" width="900px">
+   <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+     <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&lt;</div>
+     <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&gt;</div>
+     <span class="w3-badge demo w3-border w3-hover-white" onclick="currentDiv(1)"></span>
+     <span class="w3-badge demo w3-border w3-hover-white" onclick="currentDiv(2)"></span>
+     <span class="w3-badge demo w3-border w3-hover-white" onclick="currentDiv(3)"></span>
+     <span class="w3-badge demo w3-border w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+ </div> 
+ <div class="w3-container main_text">
+  <div class="w3-row w3-container">
+    <div class="w3-col m4 w3-large">
+      <img class="w3-circle" src="images/logo.jpg" width="120px" height="120px">
+      <h3>Portal</h3>
+     <a href="#" class="w3-btn w3-green w3-round"> Click to view your details</a><br>
+    </div>
+    <div class="w3-col m4 w3-large">
+      <img class="w3-circle" src="images/emmnas.jpg" width="120px" height="120px">
+      <h3>Our Services</h3>
+      <a href="services.html" class="w3-btn w3-green w3-round" width="120px" height="120px">Click to view the services we offer</a>
+    </div>
+    <div class="w3-col m4 w3-large w3-center">
+      <img class="w3-circle" src="images/logo.jpg" width="120px" height="120px">
+      <h3>Contact Us</h3>
+      <a href="contact.html" class="w3-btn w3-green w3-round">Click to view our contact details</a>
+    </div>
+   </div>
+   <div class="w3-row w3-container">
+    <div class="w3-col m6 w3-large"> 
+      <img class="w3-circle" src="images/logo.jpg" width="120px" height="120px">
+      <h3>News</h3>
+      <a href="news.html" class="w3-btn w3-green w3-round">Click here for latest information</a>
+    </div>
+    <div class="w3-col m6 w3-large">
+      <img class="w3-circle" src="images/logo.jpg" height="120px" width="120px">
+      <h3>About Us</h3> 
+      <a href="about.html" class="w3-btn w3-green w3-round">Click here to read about us</a>
+    </div>
+   </div>
+  </div>
+</div>
+<script src="js/functions.js"> </script>
+<script>
+		function w3_open() {
+          document.getElementById("main").style.marginLeft = "25%";
+          document.getElementsByClassName("w3-sidenav")[0].style.width = "25%";
+          document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+          document.getElementsByClassName("w3-opennav")[0].style.display = 'none';
+          document.getElementsByClassName("w3-overlay")[0].style.display = 'block';
+        }
+		function w3_close() {
+ 	     document.getElementById("main").style.marginLeft = "0%";
+ 		 document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+  		 document.getElementsByClassName("w3-opennav")[0].style.display = "inline-block";
+ 	     document.getElementsByClassName("w3-overlay")[0].style.display = 'none';
+}
+</script>
+</body>
+</html>
