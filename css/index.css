@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+font-family:Junction;
+src: url("../fonts/junction-regular.woff"),
+     url("../fonts/junction-regular.eot"),
+	 url("../fonts/junction-regular.svg"),
+	 url("../fonts/junction-regular.ttf");
+}
+	
+body {
+	font-family: Junction, Verdana, Geneva, sans-serif !important;
+	width: 100%;
+	height:100%;
+	min-height:100%;
+	/*background-color: pink;*/
+	color:#000;
+	/*box-shadow: inset 0 0 100px 3px rgba(0,0,0,.5);*/
+}
+header {
+	margin: 0 80px 15px 100px;
+}
+.header_img {
+	text-align:center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	z-index: 67;
+}
+.main_text {
+	text-align: center;
+	vertical-align:central;
+	
+}
+.main_text .w3-col {
+	margin-bottom: 5px;
+}
+.w3-row img {
+	border: 3px dotted #333;
+}
+.homeSlide {
+	display:none;
+	width: 100%;
+	border-radius: 4px;
+}
+.indexSlide {
+	margin-bottom: 20px;
+	max-height: 900px;
+	height: 302px;
+	
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0;background-color:transparent}
+footer {
+	background-color:#333;
+	position:absolute;
+	bottom: 0;
+	left:0;
+	right:0;
+	padding: 10px 5px;
+	color:#f1f1f1;
+	text-align:center;
+}
+footer .table {
+	display:table;
+	margin: 0 auto;
+}
+
+footer .row {
+	display: table-row;
+}
+footer .col {
+	display: table-cell;
+	padding: 5px 70px 5px 5px;
+	border-top:#FFF 1px solid;
+	margin-right: 5px;
+}
