@@ -1,2 +1,2 @@
-# emnas
-The emnas website, without the portal
+# Emnas Enterprise
+Source code for the emnas website
